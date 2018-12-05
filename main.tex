@@ -1,0 +1,203 @@
+%\documentclass[review]{elsarticle}
+\documentclass[review, 3p, 11pt]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+%\journal{Journal of \LaTeX\ Templates}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+
+\usepackage[pdftex]{graphicx}
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%\usepackage{url}
+%\usepackage{multirow}
+%\usepackage{subfigure}
+%\usepackage{caption}
+\usepackage[caption=false]{subfig}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{balance}
+%\usepackage{hyperref}
+%\setlength{\textfloatsep}{5pt}
+
+\usepackage{algorithmic}
+\usepackage{pseudocode}
+\usepackage[linesnumbered,vlined,ruled]{algorithm2e}
+\usepackage{threeparttable}
+\usepackage{comment}
+\usepackage{todonotes}
+\usepackage{tabu}
+\usepackage[justification=centering]{caption}
+\usepackage{soul}
+\usepackage{adjustbox}
+\usepackage{commath}
+\usepackage[acronym]{glossaries}
+\usepackage{titlesec}
+\usepackage[hidelinks=true]{hyperref}
+
+
+%\usepackage{mathptmx}
+%\DeclareCaptionFont{xipt}{\fontsize{11}{13}\mdseries}
+%\usepackage[font=xipt,labelfont=bf]{caption}
+%\usepackage[font=times]{caption}
+%\usepackage[font=rm]{caption}
+
+% \newfontfamily{\ubuntufont}{Times NeW Roman}
+% \DeclareCaptionFont{ubuntu}{\ubuntufont}
+\usepackage[font={footnotesize}]{caption}
+%\usepackage{setspace}
+%\doublespacing
+%\setstretch{1.667} 
+
+%\onehalfspacing
+%\usepackage[left=3cm, right=3cm]{geometry}
+
+% \setlength{\hoffset}{0.46cm} %2,54 + 0.46
+% \setlength{\textwidth}{15cm} % text a4
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+
+\title{Screening Interacting Factors in IEEE 802.11ah Restricted Access Window Using Locating Arrays}
+
+
+
+% \title{Elsevier \LaTeX\ template\tnoteref{mytitlenote}}
+% \tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.
+% }
+
+%% Group authors per affiliation:
+% \author{\IEEEauthorblockN{Le~Tian\IEEEauthorrefmark{1}, Michael~Mehari\IEEEauthorrefmark{2}, Serena~Santi\IEEEauthorrefmark{1}, Steven~Latr\'e\IEEEauthorrefmark{1}\IEEEauthorrefmark{2},\\ Eli~De~Poorter\IEEEauthorrefmark{2}, Jeroen Famaey\IEEEauthorrefmark{1}}
+% \IEEEauthorblockA{\IEEEauthorrefmark{1}University of Antwerp - imec, IDLab, Department of Mathematics and Computer Science, Belgium}
+% \IEEEauthorblockA{\IEEEauthorrefmark{2}Ghent University - imec, IDLab, Department of Information Technology, Belgium}}
+
+% \author[1]{Le Tian}
+% \ead{le.tian@uantwerpen.be}
+
+% \author[2]{Michael~Mehari}
+% \ead{michael.mehari@ugent.be}
+
+% \author[1]{Serena~Santi}
+% \ead{Serena.Santi@uantwerpen.be}
+
+% \author[1,2]{Steven~Latr\'e}
+% \ead{Steven.Latre@uantwerpen.be}
+
+% \author[2]{Eli~De~Poorter}
+% \ead{eli.depoorter@ugent.be}
+
+% \author[1]{Jeroen Famaey }
+% \ead{jeroen.famaey@uantwerpen.be}
+
+
+% \address[1]{University of Antwerp - imec, IDLab, Belgium}
+% \address[2]{Ghent University - imec, IDLab, Belgium}
+
+
+%\fntext[myfootnote]{Since 1880.}
+
+%% or include affiliations in footnotes:
+% \author[mymainaddress,mysecondaryaddress]{Elsevier Inc}
+% \ead[url]{www.elsevier.com}
+
+% \author[mysecondaryaddress]{Global Customer Service\corref{mycorrespondingauthor}}
+% \cortext[mycorrespondingauthor]{Corresponding author}
+% \ead{support@elsevier.com}
+
+%\address[mymainaddress]{1600 John F Kennedy Boulevard, Philadelphia}
+%\address[mysecondaryaddress]{360 Park Avenue South, New York}
+
+\input{glossary}
+
+%\maketitle
+
+\begin{abstract}
+xx
+\end{abstract}
+
+\begin{keyword}
+IEEE 802.11ah, restricted access window (RAW), surrogate model, real-time station grouping, multi-objective optimization
+\end{keyword}
+
+% IEEE 802.11ah; dense IoT networks; restricted access window (RAW); real-time RAW
+% 22 optimization; dynamic traffic
+
+\end{frontmatter}
+
+\linenumbers
+
+\glsresetall
+
+
+\input{input/introduction}
+\input{input/mobility}
+\input{input/Parameter_selection}
+\input{input/Locating_arrays}
+\input{input/experimental_setup}
+\input{input/evaluation}
+\input{input/conclusion}
+
+
+\section*{Acknowledgement}
+Part of this research was funded by the Flemish FWO SBO S004017N IDEAL-IoT (Intelligent DEnse And Long range IoT networks) project. Serena Santi is funded by the Fund For Scientific Research (FWO) Flanders under grant number 1S82118N.
+
+
+%\bibliographystyle{IEEEtran}
+%\bibliography{references.bib}
+
+
+% \bibnewpage 
+% {
+%   \doublespacing 
+%   \bibliography{references.bib}
+% }
+
+
+%\begingroup\doublespacing
+
+%\setstretch{1.667} 
+%\doublespacing
+\bibliographystyle{elsarticle-num}
+\bibliography{references.bib}
+%\endgroup
+
+
+
+
+
+
+\end{document}
